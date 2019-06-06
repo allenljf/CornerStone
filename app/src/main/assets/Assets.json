@@ -1,0 +1,35 @@
+{
+  "code": "success",
+  "errorCode": 0,
+  "data": {
+    "accountId": "xxx",
+    "accountStatus": "1",
+    "totalAmount": "12345678",
+    "fundAmount": "98765.43",
+    "totalPNL": "3500.77",
+    "totalPNLRate": "0.345",
+    "riskLevel": "穩健型",
+    "fundPosition": [
+      {
+        "fundId": "xxxxx",
+        "name": "美国高度平衡基金",
+        "totalAmount": "544000",
+        "totalPNL": "0.18",
+        "annualPNL": "0.12",
+        "allotValue": "500000",
+        "allotDate": "2017.10.05",
+        "lockDuring": "1年"
+      },
+      {
+        "fundId": "xxxxx",
+        "name": "美国高度平衡基金2",
+        "totalAmount": "544000",
+        "totalPNL": "0.18",
+        "annualPNL": "0.12",
+        "allotValue": "500000",
+        "allotDate": "2017.10.05",
+        "lockDuring": "1年"
+      }
+    ]
+  }
+}

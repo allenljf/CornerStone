@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Domain-->
+    <string name="domain_url_daily" translatable="false">https://www.google.com.tw/</string>
+    <string name="domain_url_global" translatable="false">https://www.google.com.tw/</string>
+    <string name="domain_url_cn" translatable="false">https://www.google.com.tw/</string>
+
+    <!--隱私政策-->
+    <string name="privacy_policy_url" translatable="false">https://www.google.com.tw/</string>
+
+    <!--風險評測-->
+    <string name="risk_assessment_url" translatable="false">https://www.google.com.tw/</string>
+
+    <string name="action_push_received" translatable="false">com.trubuzz.cornerstone.notify.PUSH_RECEIVED</string>
+
+    <!--Intercom-->
+    <string name="intercom_app_key_daily" translatable="false"></string>
+    <string name="intercom_app_id_daily" translatable="false"></string>
+
+    <string name="intercom_app_key_global" translatable="false"></string>
+    <string name="intercom_app_id_global" translatable="false"></string>
+
+    <string name="intercom_app_key_cn" translatable="false"></string>
+    <string name="intercom_app_id_cn" translatable="false"></string>
+</resources>

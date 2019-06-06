@@ -1,0 +1,18 @@
+{
+  "code":"success",
+  "errorCode":0,
+  "data":{
+    "userInfo":{
+      "nick":null,
+      "firstName":null,
+      "lastName":null,
+      "phone":"0939493661",
+      "nickName":null,
+      "middleName":null,
+      "avatar":null,
+      "email":null
+    },
+    "session":"298f7336cf319c2be7bbe2fdd092a4d0",
+    "token":"fcc60f9fd9f60be5a7ecff78760e3880"
+  }
+}

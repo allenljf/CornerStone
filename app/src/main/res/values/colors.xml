@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/black_222328</color>
+    <color name="colorPrimaryDark">@color/black_222328</color>
+    <color name="colorAccent">@color/gold_B9A88F</color>
+
+    <color name="white_FFFFFF">#FFFFFF</color>
+    <color name="white_FFFFFF_30">#4DFFFFFF</color>
+    <color name="white_F5F7FA">#F5F7FA</color>
+    <color name="white_FAFAFA">#FAFAFA</color>
+    <color name="black_222328">#222328</color>
+    <color name="gray_B4B4B4">#B4B4B4</color>
+    <color name="gray_D3D3D3">#D3D3D3</color>
+    <color name="gray_DDDDDD">#DDDDDD</color>
+    <color name="gray_E1E1E1">#E1E1E1</color>
+    <color name="gold_B9A88F">#B9A88F</color>
+    <color name="gold_B9A88F_50">#80B9A88F</color>
+    <color name="red_FF5925">#FF5925</color>
+    <color name="brown_8A7352">#8A7352</color>
+    <color name="blue_3574fa">#3574fa</color>
+    <color name="blue_43AEFF">#43AEFF</color>
+    <color name="orange_FFAC2A">#FFAC2A</color>
+
+
+    <color name="colorRising">#ff5925</color>
+    <color name="colorFalling">#2cc63e</color>
+
+    <!--圓餅圖-->
+    <string-array name="pie_colors" translatable="false">
+        <item>#7A4579</item>
+        <item>#D56073</item>
+        <item>#EC9E69</item>
+        <item>#7B3B3C</item>
+        <item>#DB5F29</item>
+        <item>#FFDFDF</item>
+        <item>#68BDE1</item>
+        <item>#DBF1F2</item>
+        <item>#CD5555</item>
+        <item>#882042</item>
+        <item>#EFEDBB</item>
+        <item>#A0DFAD</item>
+        <item>#F1C550</item>
+        <item>#FFB5B5</item>
+        <item>#DFD3C3</item>
+        <item>#C7B198</item>
+        <item>#596E79</item>
+        <item>#FFD3AD</item>
+        <item>#FFA96A</item>
+        <item>#E6E6D4</item>
+        <item>#63AEBB</item>
+        <item>#34D0BA</item>
+        <item>#F8C43A</item>
+        <item>#2AAAD2</item>
+        <item>#1C819F</item>
+        <item>#FEB062</item>
+        <item>#575151</item>
+        <item>#F1D18A</item>
+        <item>#E7B3B3</item>
+    </string-array>
+
+    <!--地理分布-->
+    <string-array name="gis_colors" translatable="false">
+        <item>#FE7213</item>
+        <item>#666666</item>
+        <item>#80C7FF</item>
+        <item>#3000FF</item>
+        <item>#C3B4AA</item>
+        <item>#1BCF9A</item>
+        <item>#FFB435</item>
+        <item>#FFA3F2</item>
+        <item>#FF1515</item>
+    </string-array>
+</resources>

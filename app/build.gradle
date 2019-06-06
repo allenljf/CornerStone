@@ -1,0 +1,143 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.trubuzz.cornerstone"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "0.4"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //根据需要 自行选择添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                XG_ACCESS_ID: "2100335011",
+                XG_ACCESS_KEY: "A4TR4G9L37EU"
+        ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            useProguard true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    flavorDimensions "market"
+
+    productFlavors {
+        mainland {
+        }
+        play {
+        }
+    }
+}
+
+configurations {
+    cleanedAnnotations
+    compile.exclude group: 'org.jetbrains' , module:'annotations'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.0.0-beta01'
+    implementation 'androidx.core:core-ktx:1.1.0-alpha05'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0-alpha4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'com.trello.rxlifecycle3:rxlifecycle:3.0.0'
+    implementation 'com.trello.rxlifecycle3:rxlifecycle-components:3.0.0'
+
+    implementation 'com.orhanobut:logger:2.1.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+
+    implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha04'
+    implementation 'com.google.android.material:material:1.1.0-alpha05'
+
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation "androidx.lifecycle:lifecycle-extensions:2.0.0"
+
+    implementation 'com.dyhdyh.loadingbar2:loadingbar:2.0.1'
+
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    implementation "org.jetbrains.anko:anko:0.10.8"
+    implementation "org.jetbrains.anko:anko-support-v4:0.10.8"
+
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+
+
+
+    implementation 'com.github.promeg:tinypinyin:2.0.3'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-12'
+
+    //h5
+    implementation 'com.github.wendux:DSBridge-Android:3.0-SNAPSHOT'
+
+    implementation 'com.chen.wakehao.library:bottom-navigation-bar:1.0.0'
+
+    // 底部菜单
+    implementation('com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar') {
+        exclude group: 'com.android.support', module: 'support-v4'
+    }
+
+    //rating
+    implementation 'com.hedgehog.ratingbar:app:1.1.2'
+
+    //chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+
+    //expandable
+    implementation 'com.github.aakira:expandable-layout:1.6.0@aar'
+
+    //pdf
+    implementation 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
+
+    //permission
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+
+    //intercom
+    implementation 'io.intercom.android:intercom-sdk-base:5.2.1'
+    implementation 'io.intercom.android:intercom-sdk-fcm:5.2.1'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+
+    //騰訊
+    implementation  'com.tencent.xinge:xinge:4.3.2-release'
+    //jg包
+    implementation 'com.tencent.jg:jg:1.1'
+    //wup包
+    implementation 'com.tencent.wup:wup:1.0.0.E-release'
+    //mid包
+    implementation 'com.tencent.mid:mid:4.0.7-Release'
+
+    //firebase
+    implementation "com.google.android.gms:play-services-gcm:16.0.0"
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.firebase:firebase-core:16.0.5'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+}

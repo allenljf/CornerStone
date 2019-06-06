@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:background="@color/white_FFFFFF">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black_222328"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="0dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/up" />
+        <include
+            layout="@layout/view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="0dp"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ael_duration="300"
+        app:ael_expanded="false"
+        app:ael_interpolator="linear"
+        app:ael_orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+</LinearLayout>
+
+
+
+
+

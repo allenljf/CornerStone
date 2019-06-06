@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="FlatButton" parent="Widget.AppCompat.Button.Borderless">
+
+    </style>
+
+    <style name="RaiseButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:backgroundTint">@color/gold_B9A88F</item>
+        <item name="android:textColor">@color/white_FFFFFF</item>
+    </style>
+
+    <!--下載對話框-->
+    <style name="DownloadDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:textColor">@color/black_222328</item>
+        <item name="colorAccent">@color/gold_B9A88F</item>
+    </style>
+
+    <!--風格箱-->
+    <style name="style_box_text">
+        <item name="android:layout_height">54dp</item>
+        <item name="android:layout_width">54dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/black_222328</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="style_box_bottom_text" parent="style_box_text">
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="style_box_top_text" parent="style_box_text">
+        <item name="android:background">@null</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/gray_B4B4B4</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="style_box_left_text" parent="style_box_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/gray_B4B4B4</item>
+        <item name="android:textSize">10dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+    <style name="style_box_left_text_first" parent="style_box_left_text">
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

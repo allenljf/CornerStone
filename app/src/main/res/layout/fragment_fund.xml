@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_222328">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                app:srlAccentColor="@color/white_FFFFFF"/>
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_FFFFFF">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/tv_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="13dp"
+                            android:textColor="@color/gold_B9A88F"
+                            android:textSize="17dp" />
+
+                    <TextView
+                            android:id="@+id/tv_introduce"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:textColor="@color/gold_B9A88F"
+                            android:textSize="13dp" />
+
+                    <ImageView
+                            android:layout_width="267dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="9dp"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/fund_line" />
+
+                    <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="24dp"
+                            android:textColor="@color/white_FFFFFF"
+                            android:textSize="13dp" />
+
+                    <TextView
+                            android:id="@+id/tv_pnl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textColor="@color/white_FFFFFF"
+                            android:textSize="48dp" />
+
+                    <TextView
+                            android:id="@+id/tv_income_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/white_FFFFFF_30"
+                            android:textSize="13dp" />
+
+                    <TextView
+                            android:id="@+id/tv_view_btn"
+                            android:layout_width="252dp"
+                            android:layout_height="46dp"
+                            android:layout_marginBottom="40dp"
+                            android:layout_marginTop="24dp"
+                            android:background="@drawable/round_3dp_gold_stroke"
+                            android:gravity="center"
+                            android:text="@string/FundCheckDetailsTitle"
+                            android:textColor="@color/gold_B9A88F"
+                            android:textSize="16dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:descendantFocusability="blocksDescendants">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_fund"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

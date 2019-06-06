@@ -1,0 +1,9 @@
+{
+  "code": "success",
+  "errorCode": 0,
+  "data": {
+    "accountId": "xxx",
+    "accountStatus": "0",
+    "riskLevel": "穩健型"
+  }
+}

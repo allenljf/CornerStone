@@ -1,0 +1,327 @@
+{
+  "code": "result_is_null",
+  "errorCode": 0,
+  "data": {
+    "specialFund": [
+      {
+        "fundId": "5",
+        "name": "Anchor/Cornerstone 特殊渠道基金",
+        "fundType": "Fund",
+        "pnl": "55.23",
+        "during": "1年6月",
+        "class": "另类投资",
+        "stars": "5.0",
+        "t_cur": "美元",
+        "incomeType": "3",
+        "tag": "高风险"
+      }
+    ],
+    "funds": [
+      {
+        "tag": "中高风险",
+        "introduce": null,
+        "list": [
+          {
+            "fundId": "TBR001",
+            "name": "人工智能全球高度分散基金",
+            "fundType": "Robot",
+            "pnl": "11.03",
+            "during": "7年4月",
+            "class": "股票型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "TBR002",
+            "name": "人工智能美国高度平衡基金",
+            "fundType": "Robot",
+            "pnl": "17.48",
+            "during": "7年4月",
+            "class": "股票型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "TBR003",
+            "name": "人工智能美国大盘价值基金",
+            "fundType": "Robot",
+            "pnl": "13.38",
+            "during": "7年4月",
+            "class": "股票型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "TBR004",
+            "name": "人工智能美国中盘混合基金",
+            "fundType": "Robot",
+            "pnl": "14.86",
+            "during": "7年4月",
+            "class": "股票型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "TBR005",
+            "name": "人工智能美国高度分散科技基金",
+            "fundType": "Robot",
+            "pnl": "20.55",
+            "during": "7年4月",
+            "class": "股票型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "TBR006",
+            "name": "人工智能美国高度分散金融基金",
+            "fundType": "Robot",
+            "pnl": "17.46",
+            "during": "7年4月",
+            "class": "股票型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "TBR008",
+            "name": "人工智能美国非必需型消费基金",
+            "fundType": "Robot",
+            "pnl": "16.16",
+            "during": "7年4月",
+            "class": "股票型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "TBR009",
+            "name": "人工智能欧洲高度分散基金",
+            "fundType": "Robot",
+            "pnl": "10.47",
+            "during": "7年4月",
+            "class": "股票型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "TBR010",
+            "name": "人工智能欧洲小盘基金",
+            "fundType": "Robot",
+            "pnl": "14.89",
+            "during": "7年4月",
+            "class": "股票型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "TBR011",
+            "name": "人工智能日本基金",
+            "fundType": "Robot",
+            "pnl": "12.04",
+            "during": "7年4月",
+            "class": "股票型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "TBR017",
+            "name": "人工智能高收益债基金",
+            "fundType": "Robot",
+            "pnl": "5.33",
+            "during": "7年4月",
+            "class": "债券型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "2",
+            "name": "日本房地产基金",
+            "fundType": "Fund",
+            "pnl": "24.0",
+            "during": "1年6月",
+            "class": "房地产",
+            "stars": "5.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          }
+        ]
+      },
+      {
+        "tag": "中风险",
+        "introduce": null,
+        "list": [
+          {
+            "fundId": "TBR007",
+            "name": "人工智能美国医疗保健与生技基金",
+            "fundType": "Robot",
+            "pnl": "19.92",
+            "during": "7年4月",
+            "class": "股票型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          }
+        ]
+      },
+      {
+        "tag": "高风险",
+        "introduce": null,
+        "list": [
+          {
+            "fundId": "TBR012",
+            "name": "人工智能新兴市场高度分散基金",
+            "fundType": "Robot",
+            "pnl": "5.25",
+            "during": "7年4月",
+            "class": "股票型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "TBR013",
+            "name": "人工智能亚洲太平洋区基金",
+            "fundType": "Robot",
+            "pnl": "7.96",
+            "during": "7年4月",
+            "class": "股票型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "TBR014",
+            "name": "人工智能新兴市场高度平衡基金",
+            "fundType": "Robot",
+            "pnl": "-1.22",
+            "during": "7年4月",
+            "class": "股票型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "1",
+            "name": "盘古系列基金",
+            "fundType": "Fund",
+            "pnl": "27.18",
+            "during": "1年7月",
+            "class": "避险基金",
+            "stars": "5.0",
+            "t_cur": "美元",
+            "incomeType": "2"
+          },
+          {
+            "fundId": "3",
+            "name": "贝莱德私募股权投资基金IV",
+            "fundType": "Fund",
+            "pnl": "14.6",
+            "during": "1年6月",
+            "class": "另类投资",
+            "stars": "5.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "4",
+            "name": "MarketX私募股权投资基金",
+            "fundType": "Fund",
+            "pnl": "14.8",
+            "during": "1年6月",
+            "class": "另类投资",
+            "stars": "5.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "6",
+            "name": "波勒斯策略基金",
+            "fundType": "Fund",
+            "pnl": "8.17",
+            "during": "1年6月",
+            "class": "套利基金",
+            "stars": "4.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "7",
+            "name": "Spotify机会投资基金",
+            "fundType": "Fund",
+            "pnl": "55.23",
+            "during": "1年6月",
+            "class": "另类投资",
+            "stars": "5.0",
+            "t_cur": "美元",
+            "incomeType": "3"
+          },
+          {
+            "fundId": "8",
+            "name": "PILGRIM 全球投资基金",
+            "fundType": "Fund",
+            "pnl": "18.22",
+            "during": "1年6月",
+            "class": "避险基金",
+            "stars": "5.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          }
+        ]
+      },
+      {
+        "tag": "中低风险",
+        "introduce": null,
+        "list": [
+          {
+            "fundId": "TBR015",
+            "name": "人工智能投资级公司债基金",
+            "fundType": "Robot",
+            "pnl": "2.02",
+            "during": "7年4月",
+            "class": "债券型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          },
+          {
+            "fundId": "TBR016",
+            "name": "人工智能美国高度分散债卷基金",
+            "fundType": "Robot",
+            "pnl": "2.17",
+            "during": "7年4月",
+            "class": "债券型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          }
+        ]
+      },
+      {
+        "tag": "低风险",
+        "introduce": null,
+        "list": [
+          {
+            "fundId": "TBR018",
+            "name": "人工智能货币型债卷基金",
+            "fundType": "Robot",
+            "pnl": "0.94",
+            "during": "7年4月",
+            "class": "债券型",
+            "stars": "0.0",
+            "t_cur": "美元",
+            "incomeType": "1"
+          }
+        ]
+      }
+    ]
+  }
+}

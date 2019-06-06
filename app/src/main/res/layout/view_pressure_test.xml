@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_FFFFFF"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/black_222328"
+                android:textSize="15dp"
+                android:layout_gravity="center_vertical"/>
+
+        <include layout="@layout/view_divider"/>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="17dp"
+            android:textColor="@color/gray_B4B4B4"
+            android:textSize="13dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_marginRight="15dp"
+            android:ellipsize="end"
+            android:maxLines="2"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"/>
+</LinearLayout>

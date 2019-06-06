@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:orientation="horizontal"
+                  android:gravity="center_vertical"
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp">
+
+        <TextView android:id="@+id/tv_account_title"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/black_222328"
+                  android:textSize="17dp"/>
+        <TextView android:id="@+id/tv_account"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="right"
+                  android:textColor="@color/black_222328"
+                  android:textSize="17dp"
+                  android:text="#12345678"/>
+    </LinearLayout>
+
+    <include layout="@layout/view_divider"/>
+
+    <LinearLayout android:id="@+id/ll_privacy"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:orientation="horizontal"
+                  android:gravity="center_vertical"
+
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp">
+        <TextView android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/black_222328"
+                  android:layout_weight="1"
+                  android:textSize="17dp"
+                  android:text="@string/SettingPrivacyPolicyTitle"/>
+        <ImageView android:layout_width="12dp"
+                   android:layout_height="15dp"
+                   android:gravity="right"
+                   android:src="@drawable/right"/>
+    </LinearLayout>
+
+    <include layout="@layout/view_divider"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:orientation="horizontal"
+                  android:gravity="center_vertical"
+
+                  android:layout_marginLeft="15dp"
+                  android:layout_marginRight="15dp">
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/black_222328"
+                  android:textSize="17dp"
+                  android:text="@string/SettingVersionTitle"/>
+        <TextView android:id="@+id/tv_build_version"
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:gravity="right"
+                  android:textColor="@color/gray_B4B4B4"
+                  android:textSize="17dp"
+                  android:text="3.1.76-Dev"/>
+    </LinearLayout>
+
+    <include layout="@layout/view_divider_large"/>
+
+    <TextView android:id="@+id/tv_logout"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:textColor="@color/black_222328"
+              android:gravity="center"
+              android:textSize="17dp"
+              android:text="@string/Logout"/>
+
+    <include layout="@layout/view_divider_large"
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"/>
+</LinearLayout>

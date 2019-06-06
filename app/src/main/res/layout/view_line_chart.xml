@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginLeft="12dp"
+              android:layout_marginRight="12dp"
+              android:id="@+id/ll_line_chart">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+        <RadioGroup
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                    android:id="@+id/btn_3m"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_widget_left_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/LineChartTimeInterval3Month"
+                    android:textColor="@drawable/line_chart_tab_text"
+                    android:textSize="10dp"/>
+
+            <RadioButton
+                    android:id="@+id/btn_6m"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_widget_center_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/LineChartTimeInterval6Month"
+                    android:textColor="@drawable/line_chart_tab_text"
+                    android:textSize="10dp"/>
+
+            <RadioButton
+                    android:id="@+id/btn_ytd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_widget_center_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/LineChartTimeIntervalThisYear"
+                    android:textColor="@drawable/line_chart_tab_text"
+                    android:textSize="10dp"/>
+
+            <RadioButton
+                    android:id="@+id/btn_1y"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_widget_center_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/LineChartTimeInterval1Year"
+                    android:textColor="@drawable/line_chart_tab_text"
+                    android:textSize="10dp"/>
+
+            <RadioButton
+                    android:id="@+id/btn_max"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_widget_right_bg"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/LineChartTimeIntervalAll"
+                    android:textColor="@drawable/line_chart_tab_text"
+                    android:textSize="10dp"/>
+        </RadioGroup>
+
+        <LinearLayout
+                android:id="@+id/marker_view"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/border_black"
+                android:visibility="gone">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black_222328"
+                        android:textSize="10dp"/>
+
+                <TextView
+                        android:id="@+id/tv_title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/black_222328"
+                        android:textSize="10dp"/>
+
+                <TextView
+                        android:id="@+id/tv_value1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"/>
+
+                <TextView
+                        android:id="@+id/tv_title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textColor="@color/black_222328"
+                        android:textSize="10dp"/>
+
+                <TextView
+                        android:id="@+id/tv_value2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.trubuzz.cornerstone.widget.chart.MyLineChart
+            android:id="@+id/lineChart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white_FFFFFF"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"/>
+
+</LinearLayout>
+
+

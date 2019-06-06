@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_FFFFFF"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black_222328"
+                android:textSize="15dp"/>
+
+        <include layout="@layout/view_divider"
+                 android:layout_width="match_parent"
+                 android:layout_height="0.5dp"
+                 android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp">
+
+        <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_legend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="20dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+
+</LinearLayout>
